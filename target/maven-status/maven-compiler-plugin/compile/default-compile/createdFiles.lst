@@ -1,2 +1,4 @@
-helloworld\Helloworld.class
-helloworld\ApplicationConfig.class
+cors\CorsRequestFilter.class
+rest\SkemaRest.class
+cors\CorsResponseFilter.class
+rest\ApplicationConfig.class

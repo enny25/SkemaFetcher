@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Selenium {
     
-    public Skema callSelenium() {
+    public Skema callSelenium(String user) {
         SkemaMapper skemamapper = new SkemaMapper();
         
         ChromeOptions chromeOptions = new ChromeOptions();
@@ -19,8 +19,8 @@ public class Selenium {
         System.setProperty("webdriver.chrome.driver","C:\\Users\\Lenovo\\Documents\\NetBeansProjects\\SkemaBackend\\chromedriver.exe");
         WebDriver driver = new ChromeDriver(chromeOptions);
         WebDriverWait waitTwoSec = new WebDriverWait(driver, 2);
-        String username = "cph-al217@cphbusiness.dk";
-        String pwd = "Bellisvej15";
+        String username = "";
+        String pwd = "";
         
         driver.get("https://dk.timeedit.net/web/cphbusiness/db1/student");
         
@@ -30,7 +30,7 @@ public class Selenium {
         
         driver.findElement(By.cssSelector(".leftlistcolumn a")).click();
         
-        driver.findElement(By.id("ffsearchname")).sendKeys("al217");
+        driver.findElement(By.id("ffsearchname")).sendKeys(user);
         driver.findElement(By.className("ffsearchbutton")).click();
         
         waitTwoSec.until(ExpectedConditions.visibilityOfElementLocated(By.id("info0")));

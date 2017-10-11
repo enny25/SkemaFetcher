@@ -24,6 +24,6 @@ public class SkemaRest {
     @Produces(MediaType.APPLICATION_JSON)
     public String getJson(@PathParam("user") String user) {
         Selenium selenium = new Selenium();
-        return gson.toJson(selenium.callSelenium().getCourses());
+        return gson.toJson(selenium.callSelenium(user).getCourses());
     }
 }

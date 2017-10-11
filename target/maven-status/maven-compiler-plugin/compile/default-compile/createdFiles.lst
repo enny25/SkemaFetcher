@@ -1,2 +1,7 @@
-helloworld\Helloworld.class
-helloworld\ApplicationConfig.class
+entity\Course.class
+entity\Skema.class
+selenium\SkemaMapper$1.class
+rest\ApplicationConfig.class
+rest\SkemaRest.class
+selenium\SkemaMapper.class
+selenium\Selenium.class

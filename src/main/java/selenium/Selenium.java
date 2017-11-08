@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -12,15 +13,16 @@ public class Selenium {
     
     public Skema callSelenium(String user) {
         SkemaMapper skemamapper = new SkemaMapper();
+        HtmlUnitDriver driver = new HtmlUnitDriver(true);
         
-        ChromeOptions chromeOptions = new ChromeOptions();
-        chromeOptions.addArguments("--headless");
-        
-        System.setProperty("webdriver.chrome.driver","C:\\Users\\Lenovo\\Documents\\NetBeansProjects\\SkemaBackend\\chromedriver.exe");
-        WebDriver driver = new ChromeDriver(chromeOptions);
+//        ChromeOptions chromeOptions = new ChromeOptions();
+//        chromeOptions.addArguments("--headless");
+//        
+//        System.setProperty("webdriver.chrome.driver","C:\\Users\\Lenovo\\Documents\\NetBeansProjects\\SkemaBackend\\chromedriver.exe");
+//        WebDriver driver = new ChromeDriver(chromeOptions);
         WebDriverWait waitTwoSec = new WebDriverWait(driver, 2);
-        String username = "";
-        String pwd = "";
+        String username = "cph-dn72@cphbusiness.dk";
+        String pwd = "cph16246";
         
         driver.get("https://dk.timeedit.net/web/cphbusiness/db1/student");
         
@@ -41,15 +43,16 @@ public class Selenium {
         driver.get(url.replace(".html", ".json"));
         
         String pageSource = driver.getPageSource();
-        pageSource = pageSource.substring(pageSource.indexOf("{"));
-        pageSource = pageSource.substring(0, pageSource.length()-20);        
+        System.out.println(pageSource);
+//        pageSource = pageSource.substring(pageSource.indexOf("{"));
+//        pageSource = pageSource.substring(0, pageSource.length()-20);        
         System.out.println(pageSource);
         driver.quit();
         
         return skemamapper.SkemaGetter(pageSource);
     }
-//    public static void main(String[] args) {
-//        Selenium s = new Selenium();
-//        s.callSelenium();
-//    }
+    public static void main(String[] args) {
+        Selenium s = new Selenium();
+        s.callSelenium("dn72");
+    }
 }

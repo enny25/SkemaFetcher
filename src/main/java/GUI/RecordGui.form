@@ -7,6 +7,21 @@
         <Property name="text" type="java.lang.String" value="jButton1"/>
       </Properties>
     </Component>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane4">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="jTextArea1">
+          <Properties>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="rows" type="int" value="5"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
   </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
@@ -30,87 +45,97 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" attributes="0">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                          <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jScrollPane1" alignment="0" min="-2" pref="107" max="-2" attributes="0"/>
-                                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                                      <Component id="RecordButtonThree" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="RecordButtonTwo" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="RecordButton" alignment="0" pref="79" max="32767" attributes="0"/>
-                                  </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jScrollPane1" alignment="0" min="-2" pref="107" max="-2" attributes="0"/>
+                          <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="RecordButtonThree" min="-2" pref="79" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="RecordButtonTwo" max="32767" attributes="0"/>
                               </Group>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="CreateUserButton" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel1" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
-                                  <Component id="RecordOneStatus" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="RecordTwoStatus" min="-2" max="-2" attributes="0"/>
-                                  <Component id="RecordThreeStatus" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Group type="102" attributes="0">
-                              <Component id="SkemaTextField" max="32767" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="SkemaGetterButton" min="-2" pref="107" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                              <Component id="RecordButton" alignment="0" max="32767" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="CreateUserButton" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                              <Component id="RecordTwoStatus" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Component id="RecordThreeStatus" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLabel1" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="RecordOneStatus" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
                   </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
-                      <Component id="jScrollPane2" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="26" max="32767" attributes="0"/>
-                      <Component id="jScrollPane3" min="-2" max="-2" attributes="0"/>
-                  </Group>
+                  <Component id="SkemaTextField" alignment="1" min="-2" pref="217" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="SkemaGetterButton" min="-2" pref="107" max="-2" attributes="0"/>
+                  <Component id="jScrollPane2" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="HtmlLabel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="1" attributes="0">
-                  <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="SkemaTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="SkemaGetterButton" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="1" attributes="0">
                           <Component id="CreateUserButton" min="-2" max="-2" attributes="0"/>
                           <Component id="jScrollPane1" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="RecordButton" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="RecordOneStatus" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+                      <Component id="RecordTwoStatus" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="103" alignment="1" groupAlignment="3" attributes="0">
+                                      <Component id="RecordButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="RecordOneStatus" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="jLabel1" alignment="1" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="RecordButtonThree" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="RecordThreeStatus" min="-2" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                   </Group>
-                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
+                      <Component id="RecordButtonTwo" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="jScrollPane2" alignment="1" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="RecordButtonTwo" min="-2" max="-2" attributes="0"/>
-                  <Component id="RecordTwoStatus" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="RecordButtonThree" min="-2" max="-2" attributes="0"/>
-                  <Component id="RecordThreeStatus" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="SkemaGetterButton" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="SkemaTextField" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jScrollPane2" min="-2" max="-2" attributes="0"/>
-                  <Component id="jScrollPane3" min="-2" max="-2" attributes="0"/>
-              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="HtmlLabel" min="-2" pref="392" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
@@ -187,6 +212,11 @@
     </Component>
     <Component class="javax.swing.JTextField" name="SkemaTextField">
     </Component>
+    <Component class="javax.swing.JLabel" name="HtmlLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;head&gt; &lt;title&gt;My schedule&lt;/title&gt; &lt;style&gt;  th{background-color:white;font-weight:bold;font-size:10pt}  .open{color:red;background-color:white;font-size:10pt}  .scheduled{background:lightgrey;font-size:10pt}  .office{background:lightblue;font-size:10pt} .chapel{color:blue;background-color:yellow;font-size:10pt} &lt;/style&gt; &lt;/head&gt; &lt;body&gt; &lt;h3&gt;My schedule&lt;/h3&gt;  &lt;table border=1 width=100%&gt; &lt;tr&gt;  &lt;th width=16%&gt;Monday&lt;/th&gt; &lt;th width=16%&gt;Tuesday&lt;/th&gt; &lt;th width=16%&gt;Wednesday&lt;/th&gt; &lt;th width=16%&gt;Thursday&lt;/th&gt; &lt;th width=16%&gt;Friday&lt;/th&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td align=center rowspan=8 class=open&gt;&lt;br&gt;OPEN&lt;br&gt; &lt;/td&gt; &lt;td align=center rowspan=8 class=open&gt;&lt;br&gt;OPEN&lt;br&gt; &lt;/td&gt; &lt;td align=center rowspan=8 class=open&gt;&lt;br&gt;OPEN&lt;br&gt; &lt;/td&gt; &lt;td align=center rowspan=8 class=open&gt;&lt;br&gt;OPEN&lt;br&gt; &lt;/td&gt; &lt;td align=center rowspan=8 class=open&gt;&lt;br&gt;OPEN&lt;br&gt; &lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td align=center rowspan=2 class=scheduled &gt;example:lunch&lt;br /&gt;M-F 12-1&lt;/td&gt; &lt;td align=center rowspan=2 class=scheduled &gt;example:lunch&lt;br /&gt;M-F 12-1&lt;/td&gt; &lt;td align=center rowspan=2 class=scheduled &gt;example:lunch&lt;br /&gt;M-F 12-1&lt;/td&gt; &lt;td align=center rowspan=2 class=scheduled &gt;example:lunch&lt;br /&gt;M-F 12-1&lt;/td&gt; &lt;td align=center rowspan=2 class=scheduled &gt;example:lunch&lt;br /&gt;M-F 12-1&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td align=center rowspan=4 class=open&gt;&lt;br&gt;OPEN&lt;br&gt; &lt;/td&gt; &lt;td align=center rowspan=16 class=open&gt;&lt;br&gt;OPEN&lt;br&gt; &lt;/td&gt; &lt;td align=center rowspan=4 class=open&gt;&lt;br&gt;OPEN&lt;br&gt; &lt;/td&gt; &lt;td align=center rowspan=16 class=open&gt;&lt;br&gt;OPEN&lt;br&gt; &lt;/td&gt; &lt;td align=center rowspan=4 class=open&gt;&lt;br&gt;OPEN&lt;br&gt; &lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td align=center rowspan=4 class=scheduled &gt;example:testing&lt;br /&gt;MWF 3:00-5:00&lt;/td&gt; &lt;td align=center rowspan=4 class=scheduled &gt;example:testing&lt;br /&gt;MWF 3:00-5:00&lt;/td&gt; &lt;td align=center rowspan=4 class=scheduled &gt;example:testing&lt;br /&gt;MWF 3:00-5:00&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td align=center rowspan=8 class=open&gt;&lt;br&gt;OPEN&lt;br&gt; &lt;/td&gt; &lt;td align=center rowspan=8 class=open&gt;&lt;br&gt;OPEN&lt;br&gt; &lt;/td&gt; &lt;td align=center rowspan=8 class=open&gt;&lt;br&gt;OPEN&lt;br&gt; &lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;/table&gt; &lt;p&gt; &lt;small&gt;Created using &lt;a href=http://www.stolaf.edu/people/hansonr/mysched&gt;http://www.stolaf.edu/people/hansonr/mysched&lt;/a&gt;&lt;/small&gt; &lt;div style=display:none&gt;&lt;pre&gt;  1 = MWF 3:00-5:00 testing 2 = M-F 12-1 lunch &lt;/pre&gt;&lt;/div&gt; &lt;/body&gt;"/>
+      </Properties>
+    </Component>
     <Container class="javax.swing.JScrollPane" name="jScrollPane2">
       <AuxValues>
         <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
@@ -194,22 +224,7 @@
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
       <SubComponents>
-        <Component class="javax.swing.JTextArea" name="SkemaFieldOne">
-          <Properties>
-            <Property name="columns" type="int" value="20"/>
-            <Property name="rows" type="int" value="5"/>
-          </Properties>
-        </Component>
-      </SubComponents>
-    </Container>
-    <Container class="javax.swing.JScrollPane" name="jScrollPane3">
-      <AuxValues>
-        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
-      </AuxValues>
-
-      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
-      <SubComponents>
-        <Component class="javax.swing.JTextArea" name="SkemaFieldTwo">
+        <Component class="javax.swing.JTextArea" name="testingTextArea">
           <Properties>
             <Property name="columns" type="int" value="20"/>
             <Property name="rows" type="int" value="5"/>

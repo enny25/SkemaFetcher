@@ -93,7 +93,7 @@ public class Course {
     public String dayOfWeek (){
         Date date = new Date();
         String dayOfWeek = new String();
-        SimpleDateFormat formatter=new SimpleDateFormat();  
+        SimpleDateFormat formatter=new SimpleDateFormat("yyyy-MM-dd");  
         try {
              date = formatter.parse(startDate);
         } catch (ParseException ex) {
@@ -107,11 +107,11 @@ public class Course {
     public int numericalDayOfWeek(){
         Date date = new Date();
         int day = 0;
-        SimpleDateFormat formatter=new SimpleDateFormat("YYYY-MM-DD");  
+        SimpleDateFormat formatter=new SimpleDateFormat("yyyy-MM-dd");  
         try {
              date = formatter.parse(startDate);
         } catch (ParseException ex) {
-            System.out.println("Incorrect date format");
+            System.out.println("Incorrect date format numerical");
         }
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(date);

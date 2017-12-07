@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+<Form version="1.8" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <NonVisualComponents>
     <Component class="javax.swing.JButton" name="jButton1">
       <Properties>
@@ -46,97 +46,73 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="1" attributes="0">
+              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jScrollPane1" alignment="0" min="-2" pref="107" max="-2" attributes="0"/>
-                          <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="RecordButtonThree" min="-2" pref="79" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="RecordButtonTwo" max="32767" attributes="0"/>
-                              </Group>
-                              <Component id="RecordButton" alignment="0" max="32767" attributes="0"/>
-                          </Group>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="SkemaTextField" pref="217" max="32767" attributes="0"/>
+                          <Component id="jScrollPane1" max="32767" attributes="0"/>
                       </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="CreateUserButton" min="-2" max="-2" attributes="0"/>
                           <Group type="102" attributes="0">
-                              <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
-                              <Component id="RecordTwoStatus" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="354" max="-2" attributes="0"/>
+                              <Component id="jLabel1" min="-2" pref="59" max="-2" attributes="0"/>
                           </Group>
-                          <Group type="102" attributes="0">
-                              <Component id="RecordThreeStatus" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel1" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
-                                  <Component id="RecordOneStatus" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
+                          <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                              <Component id="CreateUserButton" alignment="0" max="32767" attributes="0"/>
+                              <Component id="SkemaGetterButton" alignment="0" pref="102" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
-                  <Component id="SkemaTextField" alignment="1" min="-2" pref="217" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Component id="HtmlLabel" min="-2" pref="348" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
+                      <Component id="jButton2" min="-2" max="-2" attributes="0"/>
+                  </Group>
               </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="SkemaGetterButton" min="-2" pref="107" max="-2" attributes="0"/>
-                  <Component id="jScrollPane2" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="32767" attributes="0"/>
-          </Group>
-          <Group type="102" alignment="1" attributes="0">
-              <EmptySpace max="32767" attributes="0"/>
-              <Component id="HtmlLabel" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace pref="71" max="32767" attributes="0"/>
+              <Component id="RecordOneStatus" min="-2" pref="112" max="-2" attributes="0"/>
+              <EmptySpace pref="75" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="SkemaTextField" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="SkemaGetterButton" alignment="3" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="CreateUserButton" min="-2" max="-2" attributes="0"/>
+                  <Component id="jScrollPane1" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="CreateUserButton" min="-2" max="-2" attributes="0"/>
-                          <Component id="jScrollPane1" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="RecordOneStatus" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel1" alignment="1" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
-                      <Component id="RecordTwoStatus" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="SkemaTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="SkemaGetterButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
-                              <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="103" alignment="1" groupAlignment="3" attributes="0">
-                                      <Component id="RecordButton" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="RecordOneStatus" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Component id="jLabel1" alignment="1" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="RecordButtonThree" min="-2" max="-2" attributes="0"/>
+                              <Component id="HtmlLabel" pref="500" max="32767" attributes="0"/>
+                              <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
                           </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="RecordThreeStatus" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Component id="jButton2" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
-                      <Component id="RecordButtonTwo" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Component id="jScrollPane2" alignment="1" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Component id="HtmlLabel" min="-2" pref="392" max="-2" attributes="0"/>
-              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -161,45 +137,11 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CreateUserButtonActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="RecordButton">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Record 1"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RecordButtonActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JButton" name="RecordButtonTwo">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Record 2"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RecordButtonTwoActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JButton" name="RecordButtonThree">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Record 3"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RecordButtonThreeActionPerformed"/>
-      </Events>
-    </Component>
     <Component class="javax.swing.JLabel" name="jLabel1">
     </Component>
     <Component class="javax.swing.JLabel" name="RecordOneStatus">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Not Done"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="RecordTwoStatus">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Not Done"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="RecordThreeStatus">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Not Done"/>
+        <Property name="text" type="java.lang.String" value="Not Recording"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="SkemaGetterButton">
@@ -214,23 +156,16 @@
     </Component>
     <Component class="javax.swing.JLabel" name="HtmlLabel">
       <Properties>
-        <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;head&gt; &lt;title&gt;My schedule&lt;/title&gt; &lt;style&gt;  th{background-color:white;font-weight:bold;font-size:10pt}  .open{color:red;background-color:white;font-size:10pt}  .scheduled{background:lightgrey;font-size:10pt}  .office{background:lightblue;font-size:10pt} .chapel{color:blue;background-color:yellow;font-size:10pt} &lt;/style&gt; &lt;/head&gt; &lt;body&gt; &lt;h3&gt;My schedule&lt;/h3&gt;  &lt;table border=1 width=100%&gt; &lt;tr&gt;  &lt;th width=16%&gt;Monday&lt;/th&gt; &lt;th width=16%&gt;Tuesday&lt;/th&gt; &lt;th width=16%&gt;Wednesday&lt;/th&gt; &lt;th width=16%&gt;Thursday&lt;/th&gt; &lt;th width=16%&gt;Friday&lt;/th&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td align=center rowspan=8 class=open&gt;&lt;br&gt;OPEN&lt;br&gt; &lt;/td&gt; &lt;td align=center rowspan=8 class=open&gt;&lt;br&gt;OPEN&lt;br&gt; &lt;/td&gt; &lt;td align=center rowspan=8 class=open&gt;&lt;br&gt;OPEN&lt;br&gt; &lt;/td&gt; &lt;td align=center rowspan=8 class=open&gt;&lt;br&gt;OPEN&lt;br&gt; &lt;/td&gt; &lt;td align=center rowspan=8 class=open&gt;&lt;br&gt;OPEN&lt;br&gt; &lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td align=center rowspan=2 class=scheduled &gt;example:lunch&lt;br /&gt;M-F 12-1&lt;/td&gt; &lt;td align=center rowspan=2 class=scheduled &gt;example:lunch&lt;br /&gt;M-F 12-1&lt;/td&gt; &lt;td align=center rowspan=2 class=scheduled &gt;example:lunch&lt;br /&gt;M-F 12-1&lt;/td&gt; &lt;td align=center rowspan=2 class=scheduled &gt;example:lunch&lt;br /&gt;M-F 12-1&lt;/td&gt; &lt;td align=center rowspan=2 class=scheduled &gt;example:lunch&lt;br /&gt;M-F 12-1&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td align=center rowspan=4 class=open&gt;&lt;br&gt;OPEN&lt;br&gt; &lt;/td&gt; &lt;td align=center rowspan=16 class=open&gt;&lt;br&gt;OPEN&lt;br&gt; &lt;/td&gt; &lt;td align=center rowspan=4 class=open&gt;&lt;br&gt;OPEN&lt;br&gt; &lt;/td&gt; &lt;td align=center rowspan=16 class=open&gt;&lt;br&gt;OPEN&lt;br&gt; &lt;/td&gt; &lt;td align=center rowspan=4 class=open&gt;&lt;br&gt;OPEN&lt;br&gt; &lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td align=center rowspan=4 class=scheduled &gt;example:testing&lt;br /&gt;MWF 3:00-5:00&lt;/td&gt; &lt;td align=center rowspan=4 class=scheduled &gt;example:testing&lt;br /&gt;MWF 3:00-5:00&lt;/td&gt; &lt;td align=center rowspan=4 class=scheduled &gt;example:testing&lt;br /&gt;MWF 3:00-5:00&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td align=center rowspan=8 class=open&gt;&lt;br&gt;OPEN&lt;br&gt; &lt;/td&gt; &lt;td align=center rowspan=8 class=open&gt;&lt;br&gt;OPEN&lt;br&gt; &lt;/td&gt; &lt;td align=center rowspan=8 class=open&gt;&lt;br&gt;OPEN&lt;br&gt; &lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;/table&gt; &lt;p&gt; &lt;small&gt;Created using &lt;a href=http://www.stolaf.edu/people/hansonr/mysched&gt;http://www.stolaf.edu/people/hansonr/mysched&lt;/a&gt;&lt;/small&gt; &lt;div style=display:none&gt;&lt;pre&gt;  1 = MWF 3:00-5:00 testing 2 = M-F 12-1 lunch &lt;/pre&gt;&lt;/div&gt; &lt;/body&gt;"/>
+        <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;head&gt; &lt;title&gt;My schedule&lt;/title&gt; &lt;style&gt;  th{background-color:white;font-weight:bold;font-size:10pt}  .open{color:red;background-color:white;font-size:10pt}  .scheduled{background:lightgrey;font-size:10pt}  .office{background:lightblue;font-size:10pt} .chapel{color:blue;background-color:yellow;font-size:10pt} &lt;/style&gt; &lt;/head&gt; &lt;body&gt; &lt;h3&gt;My schedule&lt;/h3&gt;  &lt;table border=1 width=100%&gt; &lt;tr&gt;  &lt;th width=16%&gt;Monday&lt;/th&gt; &lt;th width=16%&gt;Tuesday&lt;/th&gt; &lt;th width=16%&gt;Wednesday&lt;/th&gt; &lt;th width=16%&gt;Thursday&lt;/th&gt; &lt;th width=16%&gt;Friday&lt;/th&gt;\u005c &lt;/tr&gt; &lt;tr&gt; &lt;td align=center rowspan=8 class=scheduled &gt; Lunch&lt;br/&gt; Monday 08:00-12:00 &lt;/td&gt; &lt;td align=center rowspan=8 class=scheduled &gt; Lunch&lt;br/&gt; Monday 08:00-12:00 &lt;/td&gt; &lt;td align=center rowspan=8 class=scheduled &gt; Lunch&lt;br/&gt; Monday 08:00-12:00 &lt;/td&gt; &lt;td align=center rowspan=8 class=scheduled &gt; Lunch&lt;br/&gt; Monday 08:00-12:00 &lt;/td&gt; &lt;td align=center rowspan=8 class=scheduled &gt; Lunch&lt;br/&gt; Monday 08:00-12:00 &lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td align=center rowspan=8 class=open&gt;&lt;br&gt;OPEN&lt;br&gt; &lt;/td&gt; &lt;td align=center rowspan=8 class=open&gt;&lt;br&gt;OPEN&lt;br&gt; &lt;/td&gt; &lt;td align=center rowspan=8 class=open&gt;&lt;br&gt;OPEN&lt;br&gt; &lt;/td&gt; &lt;td align=center rowspan=8 class=open&gt;&lt;br&gt;OPEN&lt;br&gt; &lt;/td&gt; &lt;td align=center rowspan=8 class=open&gt;&lt;br&gt;OPEN&lt;br&gt; &lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;tr&gt; &lt;/tr&gt; &lt;/table&gt; &lt;p&gt; &lt;small&gt;Created using &lt;a href=http://www.stolaf.edu/people/hansonr/mysched&gt;http://www.stolaf.edu/people/hansonr/mysched&lt;/a&gt;&lt;/small&gt; &lt;div style=display:none&gt;&lt;pre&gt;   &lt;/pre&gt;&lt;/div&gt; &lt;/body&gt;" containsInvalidXMLChars="true"/>
       </Properties>
     </Component>
-    <Container class="javax.swing.JScrollPane" name="jScrollPane2">
-      <AuxValues>
-        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
-      </AuxValues>
-
-      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
-      <SubComponents>
-        <Component class="javax.swing.JTextArea" name="testingTextArea">
-          <Properties>
-            <Property name="columns" type="int" value="20"/>
-            <Property name="rows" type="int" value="5"/>
-          </Properties>
-        </Component>
-      </SubComponents>
-    </Container>
+    <Component class="javax.swing.JButton" name="jButton2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Test"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
+      </Events>
+    </Component>
   </SubComponents>
 </Form>

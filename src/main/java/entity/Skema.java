@@ -27,7 +27,7 @@ public class Skema {
         System.out.println(courses.get(0).toString());
        int x = 1;
        
-       while(i < courses.get(x).numericalDayOfWeek()){
+       while(i != courses.get(x).numericalDayOfWeek()){
            System.out.println("here: " + courses.get(x).numericalDayOfWeek());
            coursesOfWeek.add(courses.get(x));
            System.out.println(courses.get(x).toString());

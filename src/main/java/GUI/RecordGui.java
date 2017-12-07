@@ -44,18 +44,12 @@ public class RecordGui extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         UserTextField = new javax.swing.JTextPane();
         CreateUserButton = new javax.swing.JButton();
-        RecordButton = new javax.swing.JButton();
-        RecordButtonTwo = new javax.swing.JButton();
-        RecordButtonThree = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         RecordOneStatus = new javax.swing.JLabel();
-        RecordTwoStatus = new javax.swing.JLabel();
-        RecordThreeStatus = new javax.swing.JLabel();
         SkemaGetterButton = new javax.swing.JButton();
         SkemaTextField = new javax.swing.JTextField();
         HtmlLabel = new javax.swing.JLabel();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        testingTextArea = new javax.swing.JTextArea();
+        jButton2 = new javax.swing.JButton();
 
         jButton1.setText("jButton1");
 
@@ -74,32 +68,7 @@ public class RecordGui extends javax.swing.JFrame {
             }
         });
 
-        RecordButton.setText("Record 1");
-        RecordButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                RecordButtonActionPerformed(evt);
-            }
-        });
-
-        RecordButtonTwo.setText("Record 2");
-        RecordButtonTwo.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                RecordButtonTwoActionPerformed(evt);
-            }
-        });
-
-        RecordButtonThree.setText("Record 3");
-        RecordButtonThree.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                RecordButtonThreeActionPerformed(evt);
-            }
-        });
-
-        RecordOneStatus.setText("Not Done");
-
-        RecordTwoStatus.setText("Not Done");
-
-        RecordThreeStatus.setText("Not Done");
+        RecordOneStatus.setText("Not Recording");
 
         SkemaGetterButton.setText("Fetch Skema");
         SkemaGetterButton.addActionListener(new java.awt.event.ActionListener() {
@@ -108,85 +77,69 @@ public class RecordGui extends javax.swing.JFrame {
             }
         });
 
-        HtmlLabel.setText("<html><head> <title>My schedule</title> <style>  th{background-color:white;font-weight:bold;font-size:10pt}  .open{color:red;background-color:white;font-size:10pt}  .scheduled{background:lightgrey;font-size:10pt}  .office{background:lightblue;font-size:10pt} .chapel{color:blue;background-color:yellow;font-size:10pt} </style> </head> <body> <h3>My schedule</h3>  <table border=1 width=100%> <tr>  <th width=16%>Monday</th> <th width=16%>Tuesday</th> <th width=16%>Wednesday</th> <th width=16%>Thursday</th> <th width=16%>Friday</th> </tr> <tr> <td align=center rowspan=8 class=open><br>OPEN<br> </td> <td align=center rowspan=8 class=open><br>OPEN<br> </td> <td align=center rowspan=8 class=open><br>OPEN<br> </td> <td align=center rowspan=8 class=open><br>OPEN<br> </td> <td align=center rowspan=8 class=open><br>OPEN<br> </td> </tr> <tr> </tr> <tr> </tr> <tr> </tr> <tr> </tr> <tr> </tr> <tr> </tr> <tr> </tr> <tr> <td align=center rowspan=2 class=scheduled >example:lunch<br />M-F 12-1</td> <td align=center rowspan=2 class=scheduled >example:lunch<br />M-F 12-1</td> <td align=center rowspan=2 class=scheduled >example:lunch<br />M-F 12-1</td> <td align=center rowspan=2 class=scheduled >example:lunch<br />M-F 12-1</td> <td align=center rowspan=2 class=scheduled >example:lunch<br />M-F 12-1</td> </tr> <tr> </tr> <tr> <td align=center rowspan=4 class=open><br>OPEN<br> </td> <td align=center rowspan=16 class=open><br>OPEN<br> </td> <td align=center rowspan=4 class=open><br>OPEN<br> </td> <td align=center rowspan=16 class=open><br>OPEN<br> </td> <td align=center rowspan=4 class=open><br>OPEN<br> </td> </tr> <tr> </tr> <tr> </tr> <tr> </tr> <tr> <td align=center rowspan=4 class=scheduled >example:testing<br />MWF 3:00-5:00</td> <td align=center rowspan=4 class=scheduled >example:testing<br />MWF 3:00-5:00</td> <td align=center rowspan=4 class=scheduled >example:testing<br />MWF 3:00-5:00</td> </tr> <tr> </tr> <tr> </tr> <tr> </tr> <tr> <td align=center rowspan=8 class=open><br>OPEN<br> </td> <td align=center rowspan=8 class=open><br>OPEN<br> </td> <td align=center rowspan=8 class=open><br>OPEN<br> </td> </tr> <tr> </tr> <tr> </tr> <tr> </tr> <tr> </tr> <tr> </tr> <tr> </tr> <tr> </tr> </table> <p> <small>Created using <a href=http://www.stolaf.edu/people/hansonr/mysched>http://www.stolaf.edu/people/hansonr/mysched</a></small> <div style=display:none><pre>  1 = MWF 3:00-5:00 testing 2 = M-F 12-1 lunch </pre></div> </body>");
+        HtmlLabel.setText("<html><head> <title>My schedule</title> <style>  th{background-color:white;font-weight:bold;font-size:10pt}  .open{color:red;background-color:white;font-size:10pt}  .scheduled{background:lightgrey;font-size:10pt}  .office{background:lightblue;font-size:10pt} .chapel{color:blue;background-color:yellow;font-size:10pt} </style> </head> <body> <h3>My schedule</h3>  <table border=1 width=100%> <tr>  <th width=16%>Monday</th> <th width=16%>Tuesday</th> <th width=16%>Wednesday</th> <th width=16%>Thursday</th> <th width=16%>Friday</th>\\ </tr> <tr> <td align=center rowspan=8 class=scheduled > Lunch<br/> Monday 08:00-12:00 </td> <td align=center rowspan=8 class=scheduled > Lunch<br/> Monday 08:00-12:00 </td> <td align=center rowspan=8 class=scheduled > Lunch<br/> Monday 08:00-12:00 </td> <td align=center rowspan=8 class=scheduled > Lunch<br/> Monday 08:00-12:00 </td> <td align=center rowspan=8 class=scheduled > Lunch<br/> Monday 08:00-12:00 </td> </tr> <tr> </tr> <tr> </tr> <tr> </tr> <tr> </tr> <tr> </tr> <tr> </tr> <tr> </tr> <tr> <td align=center rowspan=8 class=open><br>OPEN<br> </td> <td align=center rowspan=8 class=open><br>OPEN<br> </td> <td align=center rowspan=8 class=open><br>OPEN<br> </td> <td align=center rowspan=8 class=open><br>OPEN<br> </td> <td align=center rowspan=8 class=open><br>OPEN<br> </td> </tr> <tr> </tr> <tr> </tr> <tr> </tr> <tr> </tr> <tr> </tr> <tr> </tr> <tr> </tr> <tr> </tr> <tr> </tr> <tr> </tr> <tr> </tr> <tr> </tr> <tr> </tr> <tr> </tr> <tr> </tr> <tr> </tr> <tr> </tr> </table> <p> <small>Created using <a href=http://www.stolaf.edu/people/hansonr/mysched>http://www.stolaf.edu/people/hansonr/mysched</a></small> <div style=display:none><pre>   </pre></div> </body>");
 
-        testingTextArea.setColumns(20);
-        testingTextArea.setRows(5);
-        jScrollPane2.setViewportView(testingTextArea);
+        jButton2.setText("Test");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(37, 37, 37)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                    .addComponent(RecordButtonThree, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(RecordButtonTwo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addComponent(RecordButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(CreateUserButton)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(10, 10, 10)
-                                .addComponent(RecordTwoStatus))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(RecordThreeStatus)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(RecordOneStatus)))))
-                    .addComponent(SkemaTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                .addGap(27, 27, 27)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(SkemaGetterButton, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(HtmlLabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(SkemaTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 217, Short.MAX_VALUE)
+                            .addComponent(jScrollPane1))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(354, 354, 354)
+                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(CreateUserButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(SkemaGetterButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 102, Short.MAX_VALUE))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(HtmlLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 348, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(69, 69, 69)
+                        .addComponent(jButton2)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 71, Short.MAX_VALUE)
+                .addComponent(RecordOneStatus, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(75, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(SkemaTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(SkemaGetterButton))
-                .addGap(2, 2, 2)
+                .addGap(25, 25, 25)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(CreateUserButton)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(CreateUserButton)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(1, 1, 1)
-                        .addComponent(RecordTwoStatus)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(RecordOneStatus, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING))
+                        .addGap(69, 69, 69))
+                    .addGroup(layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(SkemaTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(SkemaGetterButton))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(3, 3, 3)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(RecordButton)
-                                        .addComponent(RecordOneStatus))
-                                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING))
-                                .addGap(18, 18, 18)
-                                .addComponent(RecordButtonThree))
+                                .addComponent(HtmlLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 500, Short.MAX_VALUE)
+                                .addGap(48, 48, 48))
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(18, 18, 18)
-                                .addComponent(RecordThreeStatus))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(64, 64, 64)
-                        .addComponent(RecordButtonTwo))
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(HtmlLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 392, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addComponent(jButton2)
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))))
         );
 
         pack();
@@ -195,23 +148,14 @@ public class RecordGui extends javax.swing.JFrame {
     private void CreateUserButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CreateUserButtonActionPerformed
 User user = new User();
 user.createUser(UserTextField.getText());// TODO add your handling code here:
-    }//GEN-LAST:event_CreateUserButtonActionPerformed
-
-    private void RecordButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RecordButtonActionPerformed
-         
-        soundrec.startRecording(UserTextField.getText()+"\\record.wav");
-        RecordOneStatus.setText("Done");
-    }//GEN-LAST:event_RecordButtonActionPerformed
-
-    private void RecordButtonTwoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RecordButtonTwoActionPerformed
-       soundrec.startRecording(UserTextField.getText()+"\\record2.wav");
-        RecordTwoStatus.setText("Done");
-    }//GEN-LAST:event_RecordButtonTwoActionPerformed
-
-    private void RecordButtonThreeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RecordButtonThreeActionPerformed
+RecordOneStatus.setText("Please say Slartibartfast");
+soundrec.startRecording(UserTextField.getText()+"\\record.wav");
+        RecordOneStatus.setText("Please say DingyDonuts");
+        soundrec.startRecording(UserTextField.getText()+"\\record2.wav");
+        RecordOneStatus.setText("Please say you are a muppet");
         soundrec.startRecording(UserTextField.getText()+"\\record3.wav");
-        RecordThreeStatus.setText("Done");        // TODO add your handling code here:
-    }//GEN-LAST:event_RecordButtonThreeActionPerformed
+        RecordOneStatus.setText("Thx for your help");
+    }//GEN-LAST:event_CreateUserButtonActionPerformed
 
     private void SkemaGetterButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SkemaGetterButtonActionPerformed
 skema = s.callSelenium(SkemaTextField.getText());
@@ -224,6 +168,13 @@ htmlString.setHtmlString();
 
 HtmlLabel.setText(htmlString.getHtmlString());
     }//GEN-LAST:event_SkemaGetterButtonActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+AlgorithmConnector ac = new AlgorithmConnector();
+ac.AlgorithmTester();
+        
+// TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -264,21 +215,15 @@ HtmlLabel.setText(htmlString.getHtmlString());
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton CreateUserButton;
     private javax.swing.JLabel HtmlLabel;
-    private javax.swing.JButton RecordButton;
-    private javax.swing.JButton RecordButtonThree;
-    private javax.swing.JButton RecordButtonTwo;
     private javax.swing.JLabel RecordOneStatus;
-    private javax.swing.JLabel RecordThreeStatus;
-    private javax.swing.JLabel RecordTwoStatus;
     private javax.swing.JButton SkemaGetterButton;
     private javax.swing.JTextField SkemaTextField;
     private javax.swing.JTextPane UserTextField;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JTextArea testingTextArea;
     // End of variables declaration//GEN-END:variables
 }

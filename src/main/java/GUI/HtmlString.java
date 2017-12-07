@@ -21,6 +21,11 @@ public class HtmlString {
     String WednesdayTime="";
     String ThursdayTime="";
     String FridayTime="";
+    String MondayAfternoon = "class=open><br>OPEN<br>";
+    String TuesdayAfternoon = "class=open><br>OPEN<br>";
+    String WednesdayAfternoon = "class=open><br>OPEN<br>";
+    String ThursdayAfternoon = "class=open><br>OPEN<br>";
+    String FridayAfternoon = "class=open><br>OPEN<br>";
     String MondayActivity = "class=open><br>OPEN<br>";
     String TuesdayActivity = "class=open><br>OPEN<br>";
     String WednesdayActivity="class=open><br>OPEN<br>";
@@ -36,24 +41,48 @@ public class HtmlString {
             System.out.println(" SetTimeAndActivity day of week " + course.dayOfWeek());
             switch(course.dayOfWeek()){
                 case "mandag":
+                    if(course.getStartTime().equalsIgnoreCase("08:30")){
                     MondayTime = course.dayOfWeek()+" " +course.getStartTime()+"-"+ course.getEndTime()+" "+course.getStartDate();
-                    MondayActivity = "class=scheduled >"+course.getCourseName()+"<br />";
+                    MondayActivity = "class=scheduled >"+course.getCourseName()+"<br />";}
+                    if(course.getEndTime().equalsIgnoreCase("16:00")){
+                        MondayAfternoon = "class=scheduled >"+course.getCourseName()+"<br />";
+                    }
+                    
                     break;
                 case "tirsdag":
+                    if(course.getStartTime().equalsIgnoreCase("08:30")){
                     TuesdayTime = course.dayOfWeek()+" " +course.getStartTime()+"-"+ course.getEndTime()+" "+course.getStartDate();;
-                    TuesdayActivity = "class=scheduled >"+course.getCourseName()+"<br />";
+                    TuesdayActivity = "class=scheduled >"+course.getCourseName()+"<br />";}
+                     if(course.getEndTime().equalsIgnoreCase("16:00")){
+                        TuesdayAfternoon = "class=scheduled >"+course.getCourseName()+"<br />";
+                    }
+                    
                     break;
                 case "onsdag":
+                    if(course.getStartTime().equalsIgnoreCase("08:30")){
                     WednesdayTime = course.dayOfWeek()+" " +course.getStartTime()+"-"+ course.getEndTime()+" "+course.getStartDate();;
-                    WednesdayActivity = "class=scheduled >"+course.getCourseName()+"<br />";
+                    WednesdayActivity = "class=scheduled >"+course.getCourseName()+"<br />";}
+                      if(course.getEndTime().equalsIgnoreCase("16:00")){
+                        WednesdayAfternoon = "class=scheduled >"+course.getCourseName()+"<br />";
+                    }
                     break;
                 case "torsdag":
+                     if(course.getStartTime().equalsIgnoreCase("08:30")){
                     ThursdayTime = course.dayOfWeek()+" " +course.getStartTime()+"-"+ course.getEndTime()+" "+course.getStartDate();;
-                    ThursdayActivity = "class=scheduled >"+course.getCourseName()+"<br />";
+                    ThursdayActivity = "class=scheduled >"+course.getCourseName()+"<br />";}
+                      if(course.getEndTime().equalsIgnoreCase("16:00")){
+                        ThursdayAfternoon = "class=scheduled >"+course.getCourseName()+"<br />";
+                    }
+                     
+                     
                     break;
                 case "fredag":
+                    if(course.getStartTime().equalsIgnoreCase("08:30")){
                     FridayTime = course.dayOfWeek()+" " +course.getStartTime()+"-"+ course.getEndTime()+" "+course.getStartDate();;
-                    FridayActivity = "class=scheduled >"+course.getCourseName()+"<br />";
+                    FridayActivity = "class=scheduled >"+course.getCourseName()+"<br />";}
+                     if(course.getEndTime().equalsIgnoreCase("16:00")){
+                        FridayAfternoon = "class=scheduled >"+course.getCourseName()+"<br />";
+                    }
                     break;
                     
             }
@@ -109,11 +138,11 @@ public class HtmlString {
 "<tr>\n" +
 "</tr>\n" +
 "<tr>\n" +
-"<td align=center rowspan=18 class=open><br>OPEN<br> </td>\n" +
-"<td align=center rowspan=18 class=open><br>OPEN<br> </td>\n" +
-"<td align=center rowspan=18 class=open><br>OPEN<br> </td>\n" +
-"<td align=center rowspan=18 class=open><br>OPEN<br> </td>\n" +
-"<td align=center rowspan=18 class=open><br>OPEN<br> </td>\n" +
+"<td align=center rowspan=8" + MondayAfternoon + " " + MondayTime + "</td>\n" +
+"<td align=center rowspan=8" + TuesdayAfternoon + " " + TuesdayTime + "</td>\n" +
+"<td align=center rowspan=8" + WednesdayAfternoon + " " + WednesdayTime + "</td>\n" +
+"<td align=center rowspan=8" + ThursdayAfternoon + " " + ThursdayTime + "</td>\n" +
+"<td align=center rowspan=8" + FridayAfternoon + " " + FridayTime + "</td>\n" +
 "</tr>\n" +
 "<tr>\n" +
 "</tr>\n" +

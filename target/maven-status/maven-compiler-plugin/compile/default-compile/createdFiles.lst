@@ -1,8 +1,6 @@
 entity\Course.class
 GUI\TestSoundRecordingUtil$1.class
 selenium\SkemaMapper$1.class
-GUI\RecordGui$4.class
-GUI\RecordGui$5.class
 GUI\User.class
 GUI\SoundRecorder.class
 selenium\SkemaMapper.class
@@ -13,7 +11,6 @@ GUI\SoundRecorder$1.class
 entity\Skema.class
 GUI\RecordGui$1.class
 GUI\RecordGui.class
-GUI\RecordGui$6.class
 rest\ApplicationConfig.class
 GUI\RecordGui$2.class
 rest\SkemaRest.class

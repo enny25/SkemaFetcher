@@ -46,10 +46,10 @@ public class AlgorithmConnector {
         }
     }
     
-    public String AlgorithmTrainer (String username){
-        List<String> testcmds = Arrays.asList("cmd.exe", "/C", "dir");
+    public String AlgorithmTrainer (String usernames){
+        List<String> cmds = Arrays.asList("cmd.exe", "/C", "python", "audioAnalysis.py", "trainClassifier", "-i", usernames, "--method", "svm", "-o", "data/svmSM" );
         
-    ProcessBuilder builder = new ProcessBuilder(testcmds);
+    ProcessBuilder builder = new ProcessBuilder(cmds);
     builder.directory(new File("C:\\Users\\Lenovo\\Desktop\\RecordUsers"));
     String result =("Try Failed");
         try {
@@ -71,7 +71,41 @@ public class AlgorithmConnector {
         return result;
     }
         
+    public String StringifyUsers (List<String> users){
+        String userString="";
+        for (String user : users) {
+            userString = userString + '"' + user +'"'+", ";
+            
+        }
+        return userString;
+    }
         
+    public String AlgorithmClassifier (String wavFile){
+        
+        List<String> cmds = Arrays.asList("cmd.exe", "/C", "python", "audioAnalysis.py", "classifyFile", "-i", wavFile, "--model", "svm", "--classifier", "data/svmSM" );
+        
+    ProcessBuilder builder = new ProcessBuilder(cmds);
+    builder.directory(new File("C:\\Users\\Lenovo\\Desktop\\RecordUsers"));
+    String result =("Try Failed");
+        try {
+            Process proc = builder.start();
+            BufferedReader reader = new BufferedReader (new InputStreamReader(proc.getInputStream()));
+            StringBuilder sbuilder = new StringBuilder();
+            String line = null;
+            while((line= reader.readLine()) != null){
+                sbuilder.append(line);
+                sbuilder.append(System.getProperty("line.seperator"));
+                
+            }
+             result = sbuilder.toString();            
+            OutputStream out = proc.getOutputStream();
+            
+        } catch (IOException ex) {
+            Logger.getLogger(AlgorithmConnector.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return result;
+        
+    }
     }
     
 

@@ -16,6 +16,7 @@ import selenium.Selenium;
  * @author Lenovo
  */
 public class RecordGui extends javax.swing.JFrame {
+    AlgorithmConnector ac = new AlgorithmConnector();
     SoundRecorder soundrec = new SoundRecorder();
     File wav;
     Selenium s = new Selenium();
@@ -147,14 +148,16 @@ public class RecordGui extends javax.swing.JFrame {
 
     private void CreateUserButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CreateUserButtonActionPerformed
 User user = new User();
+RecordOneStatus.setText("Please say Hello How are you");
 user.createUser(UserTextField.getText());// TODO add your handling code here:
-RecordOneStatus.setText("Please say Slartibartfast");
 soundrec.startRecording(UserTextField.getText()+"\\record.wav");
-        RecordOneStatus.setText("Please say DingyDonuts");
+        RecordOneStatus.setText("Please say i am fine");
         soundrec.startRecording(UserTextField.getText()+"\\record2.wav");
-        RecordOneStatus.setText("Please say you are a muppet");
+        RecordOneStatus.setText("Please say I love talking to myself");
         soundrec.startRecording(UserTextField.getText()+"\\record3.wav");
         RecordOneStatus.setText("Thx for your help");
+        
+        
     }//GEN-LAST:event_CreateUserButtonActionPerformed
 
     private void SkemaGetterButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SkemaGetterButtonActionPerformed
